@@ -1,7 +1,9 @@
+import Header from "../Components/Header";
+
 function Home() {
   return (
-    <div>
-      <h1>HOME</h1>
+    <div className="w-full">
+      <Header />
     </div>
   );
 }

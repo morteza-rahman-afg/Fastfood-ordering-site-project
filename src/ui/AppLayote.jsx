@@ -2,9 +2,9 @@ import { Outlet } from "react-router-dom";
 import Nav from "../Components/Nav";
 function AppLayote() {
   return (
-    <div className="">
+    <div className="w-full relative flex flex-col items-center">
       <Nav />
-      <main>
+      <main className=" w-full">
         <Outlet />
       </main>
     </div>
