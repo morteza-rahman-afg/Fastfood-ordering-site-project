@@ -3,6 +3,15 @@ import AppLayote from "./ui/AppLayote";
 import Home from "./pages/Home";
 import Cart from "./pages/Cart";
 import Products from "./pages/Products";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools/production";
+
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: 60 * 1000,
+  },
+});
+
 const router = createBrowserRouter([
   {
     element: <AppLayote />,
@@ -23,7 +32,12 @@ const router = createBrowserRouter([
   },
 ]);
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <QueryClientProvider client={queryClient}>
+      <ReactQueryDevtools initialIsOpen={false} />
+      <RouterProvider router={router} />
+    </QueryClientProvider>
+  );
 }
 
 export default App;
