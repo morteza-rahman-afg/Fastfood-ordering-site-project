@@ -1,8 +1,8 @@
 function App() {
   return (
     <div>
-      <h1>title</h1>
-      <p>
+      <h1 className=" font-DanaMedium">تایتل</h1>
+      <p className=" font-DanaBold">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem,
         tenetur.
       </p>

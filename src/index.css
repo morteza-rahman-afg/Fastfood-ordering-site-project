@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: "dana bold";
+  src: url("/fonts/woff2/DanaFaNum-DemiBold.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "dana medium";
+  src: url("/fonts/woff2/DanaFaNum-Medium.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "dana regular";
+  src: url("/fonts/woff2/DanaFaNum-Regular.woff2") format("woff2");
+  font-display: swap;
+}
