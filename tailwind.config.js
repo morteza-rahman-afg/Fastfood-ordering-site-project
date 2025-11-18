@@ -13,7 +13,7 @@ export default {
         bg1: "#D21919",
       },
       boxShadow: {
-        Normul: "0 0 8px rgba(0,0,0,0.2)",
+        Normul: "0 0 5px rgba(0,0,0,0.1)",
       },
     },
   },

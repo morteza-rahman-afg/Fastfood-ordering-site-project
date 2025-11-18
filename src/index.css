@@ -16,3 +16,45 @@
   src: url("/fonts/woff2/DanaFaNum-Regular.woff2") format("woff2");
   font-display: swap;
 }
+.swiper {
+  --swiper-navigation-size: 25px;
+  --swiper-theme-color: #fff;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+.swiper-pagination {
+  bottom: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.swiper-pagination-bullet {
+  width: 18px;
+  height: 18px;
+  background-color: #fff !important;
+  opacity: 1 !important;
+  margin: 0 4px;
+  transform: scale(1.5);
+  transition: transform ease-in 300ms;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #888 !important;
+  transform: scale(2);
+}

@@ -9,3 +9,14 @@ export async function fetchProduct() {
     console.log(err.massage);
   }
 }
+export async function fetchProductOne(id) {
+  try {
+    const res = await fetch(`http://localhost:6001/products/${id}`);
+    if (!res.ok) throw new Error("not fiane fetch");
+    const data = res.json();
+
+    return data;
+  } catch (err) {
+    console.log(err.massage);
+  }
+}
