@@ -5,10 +5,14 @@ import Cart from "./pages/Cart";
 import Products from "./pages/Products";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools/production";
+import { CartProvider } from "./contexts/CartContext";
+import Product from "./pages/Product";
 
 const queryClient = new QueryClient({
   defaultOptions: {
-    queries: 60 * 1000,
+    queries: {
+      staleTime: 0,
+    },
   },
 });
 
@@ -28,6 +32,10 @@ const router = createBrowserRouter([
         path: "products",
         element: <Products />,
       },
+      {
+        path: "product/:idProduct",
+        element: <Product />,
+      },
     ],
   },
 ]);
@@ -35,7 +43,9 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <ReactQueryDevtools initialIsOpen={false} />
-      <RouterProvider router={router} />
+      <CartProvider>
+        <RouterProvider router={router} />
+      </CartProvider>
     </QueryClientProvider>
   );
 }
