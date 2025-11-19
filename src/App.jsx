@@ -7,6 +7,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools/production";
 import { CartProvider } from "./contexts/CartContext";
 import Product from "./pages/Product";
+import OrderConfirmation from "./pages/OrderConfirmation";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -29,7 +30,7 @@ const router = createBrowserRouter([
         element: <Cart />,
       },
       {
-        path: "products",
+        path: "products/:typeProduct",
         element: <Products />,
       },
       {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
         element: <Product />,
       },
     ],
+  },
+  {
+    path: "OrderConfirmation",
+    element: <OrderConfirmation />,
   },
 ]);
 function App() {
