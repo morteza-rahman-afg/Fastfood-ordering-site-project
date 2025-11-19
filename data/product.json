@@ -4,7 +4,7 @@
       "id": 1,
       "nameProduct": "پیتزا مخلوط",
       "image": "/P-1.webp",
-      "Category": "Main course",
+      "Category": "MainCourse",
       "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،",
       "price": 100000,
       "Quantity": 0
@@ -13,7 +13,7 @@
       "id": 2,
       "nameProduct": "همبرگز و سیب زمینی",
       "image": "/P-2.png",
-      "Category": "Main course",
+      "Category": "MainCourse",
       "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،",
       "price": 150000,
       "Quantity": 0
@@ -22,7 +22,7 @@
       "id": 3,
       "nameProduct": "ساندویچ هات داگ",
       "image": "/P-3.png",
-      "Category": "Main course",
+      "Category": "MainCourse",
       "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،",
       "price": 300000,
       "Quantity": 0
@@ -31,7 +31,7 @@
       "id": 4,
       "nameProduct": "مرغ سخاری",
       "image": "/P-4.png",
-      "Category": "Main course",
+      "Category": "MainCourse",
       "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،",
       "price": 100000,
       "Quantity": 0
@@ -40,7 +40,7 @@
       "id": 5,
       "nameProduct": "همبرگر",
       "image": "/P-5.png",
-      "Category": "Main course",
+      "Category": "MainCourse",
       "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،",
       "price": 120000,
       "Quantity": 0
@@ -49,7 +49,7 @@
       "id": 6,
       "nameProduct": "سیب زمینی",
       "image": "/P-6.png",
-      "Category": "Main course",
+      "Category": "MainCourse",
       "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،",
       "price": 80000,
       "Quantity": 0
@@ -150,7 +150,7 @@
       "image": "/P-17.jpg",
       "Category": "sauce",
       "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،",
-      "price": 1,
+      "price": 10000,
       "Quantity": 0
     },
     {
