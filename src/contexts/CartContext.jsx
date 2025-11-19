@@ -62,6 +62,13 @@ function cartReducer(state, action) {
           )
           .filter((item) => item.Quantity > 0),
       };
+    case "DELETE_PRODUCT":
+      return {
+        ...state,
+        dataCart: state.dataCart.filter((item) => item.id !== action.payload),
+      };
+    case "DELETE_ALL_CART":
+      return { ...state, dataCart: [] };
     default:
       return state;
   }
@@ -78,7 +85,7 @@ function CartProvider({ children }) {
     },
     [dataCart]
   );
-  console.log(dataCart);
+
   return (
     <CartContext.Provider value={{ dataCart, orderData, dispatch }}>
       {children}
