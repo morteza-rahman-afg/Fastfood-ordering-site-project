@@ -18,7 +18,7 @@ function CartProduct({ dataProduct }) {
           <span>تومان</span> <span>{dataProduct.price}</span>
         </p>
         <Link
-          to={`product/${dataProduct.id}`}
+          to={`/product/${dataProduct.id}`}
           className=" text-center lg:leading-[40px] md:leading-[32px] leading-[28px] bg-bg1 w-20 h-7 md:w-24 md:h-8 lg:w-28 lg:h-10 text-white rounded-lg text-[8px] lg:text-xs"
         >
           جزئیات محصول
