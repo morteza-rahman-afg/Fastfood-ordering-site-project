@@ -13,7 +13,10 @@ function EmptyCart() {
         سبد خرید شما خالی است! از قسمت محصولات، اقلام مورد نظر خود را انتخاب
         کنید و به سبد خرید خود اضافه کنید.
       </p>
-      <Link className="w-32 sm:w-40 md:w-44 h-9 sm:h-10 md:h-12 text-white border border-bg1 rounded-lg bg-bg1 font-DanaMedium text-center leading-[36px] sm:leading-[40px] md:leading-[48px] hover:bg-white hover:text-textColor transition-all duration-300">
+      <Link
+        to={"/products/all"}
+        className="w-32 sm:w-40 md:w-44 h-9 sm:h-10 md:h-12 text-white border border-bg1 rounded-lg bg-bg1 font-DanaMedium text-center leading-[36px] sm:leading-[40px] md:leading-[48px] hover:bg-white hover:text-textColor transition-all duration-300"
+      >
         محصولات
       </Link>
     </div>

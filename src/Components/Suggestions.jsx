@@ -17,26 +17,29 @@ function Suggestions() {
   useEffect(
     function () {
       if (!Array.isArray(data)) return;
-      if (dataCart?.length > 0 && suggestionItems.length == 0) {
+      if (data && suggestionItems.length === 0) {
         const filtered = data.filter((p) =>
           CATEGORIES_WE_WANT.includes(p.Category)
         );
         setSuggestionItems(getRandomItems(filtered, 4));
       }
     },
-    [data, CATEGORIES_WE_WANT, dataCart, suggestionItems]
+    [data, dataCart, suggestionItems]
   );
 
   console.log(suggestionItems);
   console.log(data);
   if (isLoading) return <p>در حال پردازش....</p>;
-
+  console.log(suggestionItems);
   return (
     <div className=" w-[98%] md:w-[90%] flex items-center justify-center flex-wrap gap-x-5 gap-y-4 md:gap-y-8 mb-10 ">
       {suggestionItems.map((product) => {
         const inCart = dataCart.some((item) => item.id == product.id);
         return (
-          <div className=" flex items-center justify-between w-[400px] h-24 rounded-lg shadow-Normul px-1 sm:px-2  md:px-3">
+          <div
+            key={product.id}
+            className=" flex items-center justify-between w-[400px] h-24 rounded-lg shadow-Normul px-1 sm:px-2  md:px-3"
+          >
             <div className=" flex items-center justify-center">
               <img
                 className=" w-20 h-20 object-cover"
